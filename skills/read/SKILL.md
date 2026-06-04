@@ -100,13 +100,13 @@ Output includes:
 Save to:
 
 ```
-~/Desktop/claude-papers/papers/{paper-slug}/meta.json
+~/Desktop/claude-workspace/papers/{paper-slug}/meta.json
 ```
 
 Copy original PDF:
 
 ```bash
-cp <pdf-path> ~/Desktop/claude-papers/papers/{paper-slug}/paper.pdf
+cp <pdf-path> ~/Desktop/claude-workspace/papers/{paper-slug}/paper.pdf
 ```
 
 Fallback:
@@ -169,8 +169,8 @@ Examples:
 
 Persist these 2 tags in both locations:
 
-* `~/Desktop/claude-papers/papers/{paper-slug}/meta.json` as `tags`
-* `~/Desktop/claude-papers/index.json` entry as `tags`
+* `~/Desktop/claude-workspace/papers/{paper-slug}/meta.json` as `tags`
+* `~/Desktop/claude-workspace/papers/index.json` entry as `tags`
 
 ---
 
@@ -179,7 +179,7 @@ Persist these 2 tags in both locations:
 Create folder:
 
 ```
-~/Desktop/claude-papers/papers/{paper-slug}/
+~/Desktop/claude-workspace/papers/{paper-slug}/
 ```
 
 ---
@@ -285,13 +285,13 @@ At least one runnable demo must be created.
 
 **All code demos must be placed in:**
 ```
-~/Desktop/claude-papers/papers/{paper-slug}/code/
+~/Desktop/claude-workspace/papers/{paper-slug}/code/
 ```
 
 Create the code directory first:
 
 ```bash
-mkdir -p ~/Desktop/claude-papers/papers/{paper-slug}/code
+mkdir -p ~/Desktop/claude-workspace/papers/{paper-slug}/code
 ```
 
 Guidelines:
@@ -323,11 +323,11 @@ Avoid generic names.
 # Step 5: Extract Images
 
 ```bash
-mkdir -p ~/Desktop/claude-papers/papers/{paper-slug}/images
+mkdir -p ~/Desktop/claude-workspace/papers/{paper-slug}/images
 
 python3 ${CLAUDE_PLUGIN_ROOT}/read/scripts/extract-images.py \
   paper.pdf \
-  ~/Desktop/claude-papers/papers/{paper-slug}/images
+  ~/Desktop/claude-workspace/papers/{paper-slug}/images
 ```
 
 Rename key images descriptively:
@@ -366,7 +366,7 @@ Append new entry to the papers array:
 ```
 **IMPORTANT**: The index.json file must be located at:
 ```
-~/Desktop/claude-papers/index.json
+~/Desktop/claude-workspace/papers/index.json
 ```
 
 ---
