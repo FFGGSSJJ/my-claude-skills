@@ -1,0 +1,7 @@
+{
+  "name": "plot",
+  "description": "Matplotlib templates for publication-quality figures",
+  "author": {
+    "name": "fuguan"
+  }
+}

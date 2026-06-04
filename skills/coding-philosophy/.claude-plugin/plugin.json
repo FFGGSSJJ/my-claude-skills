@@ -1,0 +1,7 @@
+{
+  "name": "coding-philosophy",
+  "description": "Behavioral guidelines to reduce common LLM coding mistakes",
+  "author": {
+    "name": "fuguan"
+  }
+}

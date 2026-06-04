@@ -1,0 +1,37 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "my-claude-skills",
+  "description": "Personal Claude Code skills: coding philosophy, matplotlib paper figures, and PDF paper reader",
+  "owner": {
+    "name": "fuguan"
+  },
+  "plugins": [
+    {
+      "name": "coding-philosophy",
+      "description": "Behavioral guidelines to reduce common LLM coding mistakes. Activates when writing, reviewing, or refactoring code — simplicity first, surgical changes, goal-driven execution.",
+      "author": {
+        "name": "fuguan"
+      },
+      "category": "productivity",
+      "source": "./skills/coding-philosophy"
+    },
+    {
+      "name": "plot",
+      "description": "Matplotlib templates for paper / blog / report figures with Palatino body font and Google-brand palette. Bar, boxplot, line, and scatter variants. Use when making charts for papers or slides.",
+      "author": {
+        "name": "fuguan"
+      },
+      "category": "productivity",
+      "source": "./skills/plot"
+    },
+    {
+      "name": "read",
+      "description": "PDF paper reader with image extraction. Use when studying, analyzing, or deeply understanding a research paper.",
+      "author": {
+        "name": "fuguan"
+      },
+      "category": "productivity",
+      "source": "./skills/read"
+    }
+  ]
+}
