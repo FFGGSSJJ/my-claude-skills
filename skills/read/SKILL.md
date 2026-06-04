@@ -64,7 +64,7 @@ USER_INPUT="<user-input>"
 # Check if input is a URL (starts with http:// or https://)
 if [[ "$USER_INPUT" =~ ^https?:// ]]; then
   # Download PDF from URL
-  INPUT_PATH=$(node ${CLAUDE_PLUGIN_ROOT}/read/scripts/download-pdf.cjs "$USER_INPUT")
+  INPUT_PATH=$(node ${CLAUDE_PLUGIN_ROOT}/scripts/download-pdf.cjs "$USER_INPUT")
 else
   # Use local path directly
   INPUT_PATH="$USER_INPUT"
@@ -84,7 +84,7 @@ For local paths, use the path directly without downloading.
 Extract structured information:
 
 ```bash
-node ${CLAUDE_PLUGIN_ROOT}/read/scripts/parse-pdf.js "$INPUT_PATH"
+node ${CLAUDE_PLUGIN_ROOT}/scripts/parse-pdf.js "$INPUT_PATH"
 ```
 
 Output includes:
@@ -325,7 +325,7 @@ Avoid generic names.
 ```bash
 mkdir -p ~/Desktop/claude-workspace/papers/{paper-slug}/images
 
-python3 ${CLAUDE_PLUGIN_ROOT}/read/scripts/extract-images.py \
+python3 ${CLAUDE_PLUGIN_ROOT}/scripts/extract-images.py \
   paper.pdf \
   ~/Desktop/claude-workspace/papers/{paper-slug}/images
 ```
