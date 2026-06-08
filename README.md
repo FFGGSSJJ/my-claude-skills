@@ -10,22 +10,36 @@ Personal Claude Code marketplace with three skills for research and writing work
 | **plot** | Matplotlib templates for paper/report figures — Palatino body font + Google-brand palette. Bar, boxplot, line, scatter. |
 | **read** | PDF paper reader with image extraction. Study and analyze research papers. |
 
-## Install as Marketplace
+## Install
 
-On any machine:
+In Claude Code, add this repo as a plugin marketplace:
 
 ```
-/install-marketplace https://github.com/YOU/my-claude-skills
+/plugin marketplace add FFGGSSJJ/my-claude-skills
 ```
 
-This registers all three skills at once. After install, run once for the `read` skill:
+Then install the plugins you want:
+
+```
+/plugin install coding-philosophy@my-claude-skills
+/plugin install plot@my-claude-skills
+/plugin install read@my-claude-skills
+```
+
+Or run `/plugin` and pick them from the interactive menu.
+
+### Extra step for `read`
+
+The `read` skill needs its Node dependencies installed once:
 
 ```bash
 cd ~/.claude/plugins/marketplaces/my-claude-skills/skills/read && npm install
 ```
 
-## Install Individual Plugins
+## Credits
 
-```
-/install-plugin https://github.com/YOU/my-claude-skills
-```
+These skills were inspired by and build on the work of others:
+
+- [alaliqing/claude-paper](https://github.com/alaliqing/claude-paper)
+- [yzhao062/agent-style](https://github.com/yzhao062/agent-style)
+- [@karpathy](https://x.com/karpathy/status/2015883857489522876)
