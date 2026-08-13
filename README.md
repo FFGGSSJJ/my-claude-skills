@@ -1,6 +1,6 @@
 # My Claude Code Skills
 
-Personal Claude Code marketplace with three skills for research and writing workflows.
+Personal Claude Code marketplace with four skills for research and writing workflows.
 
 ## Skills
 
@@ -9,6 +9,7 @@ Personal Claude Code marketplace with three skills for research and writing work
 | **coding-philosophy** | Behavioral guidelines to reduce common LLM coding mistakes (simplicity first, surgical changes, goal-driven execution) |
 | **plot** | Matplotlib templates for paper/report figures — Palatino body font + Google-brand palette. Bar, boxplot, line, scatter. |
 | **read** | PDF paper reader with image extraction. Study and analyze research papers. |
+| **write** | Default English writing standards — 17 canonical prose rules + page-capped paper and audit-time additions. Applies when drafting or editing prose. |
 
 ## Install
 
@@ -24,6 +25,7 @@ Then install the plugins you want:
 /plugin install coding-philosophy@my-claude-skills
 /plugin install plot@my-claude-skills
 /plugin install read@my-claude-skills
+/plugin install write@my-claude-skills
 ```
 
 Or run `/plugin` and pick them from the interactive menu.

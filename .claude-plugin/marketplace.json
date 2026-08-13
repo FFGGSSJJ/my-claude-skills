@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "my-claude-skills",
-  "description": "Personal Claude Code skills: coding philosophy, matplotlib paper figures, and PDF paper reader",
+  "description": "Personal Claude Code skills: coding philosophy, matplotlib paper figures, PDF paper reader, and writing standards",
   "owner": {
     "name": "fuguan"
   },
@@ -32,6 +32,15 @@
       },
       "category": "productivity",
       "source": "./skills/read"
+    },
+    {
+      "name": "write",
+      "description": "Default English writing standards: 17 canonical prose rules for all writing, 18 page-capped additions for conference papers, and 2 compiled-PDF audit rules. Use when drafting or editing emails, docs, posts, or paper prose.",
+      "author": {
+        "name": "fuguan"
+      },
+      "category": "productivity",
+      "source": "./skills/write"
     }
   ]
 }
