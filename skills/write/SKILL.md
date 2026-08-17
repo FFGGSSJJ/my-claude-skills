@@ -1,17 +1,17 @@
 ---
 name: write
-description: Default writing standards. Use whenever producing English prose for emails, message drafts, blog posts, documentation, grant proposals, conference/journal paper drafts (NeurIPS, ICML, ICLR, ACL, CVPR, COLM, EMNLP, arXiv) and thesis work. Applies 18 canonical rules everywhere; 18 page-capped additions (RULE-P1..P18) for page-constrained papers; 2 audit-time rules (RULE-A1..A2) only when reviewing a compiled PDF for submission. Treat canonical and page-capped rules as peer constraints applied at generation time; audit rules trigger at final-pass review, not during drafting.
+description: Default writing standards. Use whenever producing English prose for emails, message drafts, blog posts, documentation, grant proposals, conference/journal paper drafts (NeurIPS, ICML, ICLR, ACL, CVPR, COLM, EMNLP, arXiv) and thesis work. Applies 19 canonical rules everywhere; 18 page-capped additions (RULE-P1..P18) for page-constrained papers; 2 audit-time rules (RULE-A1..A2) only when reviewing a compiled PDF for submission. Treat canonical and page-capped rules as peer constraints applied at generation time; audit rules trigger at final-pass review, not during drafting.
 ---
 
 # Writing Style
 
 Default standards for English prose. Apply at generation and edit time. All rules are peers; no group is higher priority than another.
 
-**Scope.** RULE-01..18 apply to every writing task: email, message draft, post, doc, paper prose. RULE-P1..P18 apply *only* when the target is a page-capped paper (NeurIPS/ICML/ICLR-style 8-10 page caps and similar); skip them for email and short-form prose where they would over-constrain tone. RULE-A1..A2 are final-pass audit rules: trigger only when reviewing the compiled PDF for submission, not during drafting.
+**Scope.** RULE-01..19 apply to every writing task: email, message draft, post, doc, paper prose. RULE-P1..P18 apply *only* when the target is a page-capped paper (NeurIPS/ICML/ICLR-style 8-10 page caps and similar); skip them for email and short-form prose where they would over-constrain tone. RULE-A1..A2 are final-pass audit rules: trigger only when reviewing the compiled PDF for submission, not during drafting.
 
-## Canonical (RULE-01..18)
+## Canonical (RULE-01..19)
 
-RULE-01..12 distilled from Strunk & White, Orwell, Pinker, and Gopen & Swan. RULE-13..17 added by Wenhao Chai. RULE-18 is a deliberate exception to RULE-13 by Guan.
+RULE-01..12 distilled from Strunk & White, Orwell, Pinker, and Gopen & Swan. RULE-13..17 added by Wenhao Chai. RULE-18 and RULE-19 added by Guan. RULE-18 is a deliberate exception to RULE-13.
 
 1. **RULE-01** Do not assume the reader shares your tacit knowledge. (Pinker 2014, Ch. 3)
 2. **RULE-02** Do not use passive voice when the agent matters. (Orwell 1946 Rule 3; S&W §II.14)
@@ -31,6 +31,7 @@ RULE-01..12 distilled from Strunk & White, Orwell, Pinker, and Gopen & Swan. RUL
 16. **RULE-16** Do not use the same content word twice in one sentence or in adjacent sentences. Restructure, pronominalize, or pick a role-specific alternative. Function words and the piece's named signature concepts are exempt; reusing a defined term is desirable, not a violation.
 17. **RULE-17** Do not apologize in body prose for weak assumptions, narrow scope, or worse-than-baseline results. State each assumption once where it belongs and reserve limitations for a dedicated section. Phrasings like "Although our algorithm does not outperform X" frame weakness without communicating it; cut them.
 18. **RULE-18** When first introducing a term's abbreviation, both the parenthetical form "Large Language Models (LLMs)" and the appositive form "Large Language Models, or LLMs, ..." are acceptable. Alternate between them, and use each sparingly, so no passage is overloaded with punctuation. The parenthetical form here is a deliberate exception to RULE-13.
+19. **RULE-19** Do not overload a sentence or paragraph with commas and semicolons. More than three commas in a sentence, or more than one semicolon in a paragraph, usually signals overpacked structure: delete unnecessary commas, split it into separate sentences, or recast it as a numbered list. This complements RULE-12 on breaking long sentences.
 
 ## Page-capped paper additions (RULE-P1..P18)
 
@@ -88,7 +89,7 @@ Break any rule sooner than write something awkward (Orwell 1946 Rule 6). Rules s
 
 When an agent loads this skill, a one-line acknowledgment confirms activation:
 
-> style v0.8.0 active: 18 canonical rules (RULE-01..18) + 18 page-capped additions (RULE-P1..P18, paper-only) + 2 final-pass audit rules (RULE-A1..A2, compiled-PDF-only).
+> style v0.9.0 active: 19 canonical rules (RULE-01..19) + 18 page-capped additions (RULE-P1..P18, paper-only) + 2 final-pass audit rules (RULE-A1..A2, compiled-PDF-only).
 
 ## Credits
 

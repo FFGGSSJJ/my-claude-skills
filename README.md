@@ -9,7 +9,7 @@ Personal Claude Code marketplace with four skills for research and writing workf
 | **coding-philosophy** | Behavioral guidelines to reduce common LLM coding mistakes (simplicity first, surgical changes, goal-driven execution) |
 | **plot** | Matplotlib templates for paper/report figures — Palatino body font + Google-brand palette. Bar, boxplot, line, scatter. |
 | **read** | PDF paper reader with image extraction. Study and analyze research papers. |
-| **write** | Default English writing standards — 18 canonical prose rules + page-capped paper and audit-time additions. Applies when drafting or editing prose. |
+| **write** | Default English writing standards — 19 canonical prose rules + page-capped paper and audit-time additions. Applies when drafting or editing prose. |
 
 ## Install
 
